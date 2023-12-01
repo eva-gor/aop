@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class AspectLog {
-	@Pointcut("execution(public void evagor.bl.MyService.doSomething())")
+	@Pointcut("execution(void *.MyService.*(..))")
 	public void serviceMethods() {
 	}
 
